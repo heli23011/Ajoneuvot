@@ -100,4 +100,10 @@ class Tractor{
 		amountOfFuel = 0;
 		printData();
 	}
-]
+	public void printData()
+	{
+		System.out.println("Brand: " + brand);
+        System.out.println("Model: " + model);
+        System.out.println("Fuel: " + amountOfFuel);
+	}
+}
