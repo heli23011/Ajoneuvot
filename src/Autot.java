@@ -32,8 +32,13 @@ public class Autot {
 
 }//end Autot
 
+abstract class Vehicle {
+
+	public abstract void printData();
+}
+
 //Auto-luokka
-class Car {
+class Car extends Vehicle{
 	
 	private String brand;
 	private String model;
@@ -79,14 +84,16 @@ class Car {
 		System.out.println("Fuel in the tank after the refuel: " + amountOfFuel);
 	}
 	
+	@Override
 	public void printData() {
+		System.out.println("Car:");
 		System.out.println("Brand: " + brand);
 		System.out.println("Model: " + model);
 		System.out.println("Fuel: " + amountOfFuel);
 	}
 	
 }
-class Tractor{
+class Tractor extends Vehicle{
 	private String brand;
 	private String model;
 	private int amountOfFuel;
@@ -100,4 +107,12 @@ class Tractor{
 		amountOfFuel = 0;
 		printData();
 	}
-]
+
+	@Override
+	public void printData() {
+		System.out.println("Tractor:");
+		System.out.println("Brand: " + brand);
+		System.out.println("Model: " + model);
+		System.out.println("Fuel: " + amountOfFuel);
+	}
+}
