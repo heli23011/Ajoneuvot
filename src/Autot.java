@@ -97,6 +97,7 @@ class Car extends Vehicle{
 	}
 	
 }
+
 class Tractor extends Vehicle{
 	private String brand;
 	private String model;
@@ -112,17 +113,18 @@ class Tractor extends Vehicle{
 		printData();
 	}
 
-
-
-
-
- Tractor(String brand, String model, int amountOfFuel) 
+	public Tractor(String brand, String model, int amountOfFuel) 
 	{
 		this.brand = brand;
 		this.model = model;
 		this.amountOfFuel = amountOfFuel;
-		
 		printData();
+	}
+	public void refuel(int amount) {
+		System.out.println("Fuel in the tank: " + amountOfFuel);
+		System.out.println("Refuel: " + amount);
+		amountOfFuel = amountOfFuel + amount;
+		System.out.println("Fuel in the tank after the refuel: " + amountOfFuel);
 	}
 	@Override
 	public void printData()
@@ -131,6 +133,5 @@ class Tractor extends Vehicle{
 		System.out.println("Brand: " + brand);
 		System.out.println("Model: " + model);
 		System.out.println("Fuel: " + amountOfFuel);
-
 	}
 }
