@@ -114,5 +114,6 @@ class Tractor extends Vehicle{
 		System.out.println("Brand: " + brand);
 		System.out.println("Model: " + model);
 		System.out.println("Fuel: " + amountOfFuel);
+
 	}
 }
