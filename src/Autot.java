@@ -86,3 +86,18 @@ class Car {
 	}
 	
 }
+class Tractor{
+	private String brand;
+	private String model;
+	private int amountOfFuel;
+	
+	public String getModel() {
+		return model;
+	}
+	public Tractor() {
+		brand = "";
+		model = "";
+		amountOfFuel = 0;
+		printData();
+	}
+]
