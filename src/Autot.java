@@ -8,6 +8,10 @@ public class Autot {
 		String answer = "";
 		Car car = new Car("Toyota", "RAV4", 40);
 		car.printData();
+		
+		Tractor tractor = new Tractor();
+		tractor.printData();
+		
 		System.out.println("a=accelerate b=break x=exit");
 		answer = in.nextLine();
 
@@ -102,7 +106,7 @@ class Tractor extends Vehicle{
 		return model;
 	}
 	public Tractor() {
-		brand = "";
+		brand = "Ferguson";
 		model = "";
 		amountOfFuel = 0;
 		printData();
