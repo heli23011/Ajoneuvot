@@ -112,8 +112,21 @@ class Tractor extends Vehicle{
 		printData();
 	}
 
+
+
+
+
+ Tractor(String brand, String model, int amountOfFuel) 
+	{
+		this.brand = brand;
+		this.model = model;
+		this.amountOfFuel = amountOfFuel;
+		
+		printData();
+	}
 	@Override
-	public void printData() {
+	public void printData()
+	{
 		System.out.println("Tractor:");
 		System.out.println("Brand: " + brand);
 		System.out.println("Model: " + model);
