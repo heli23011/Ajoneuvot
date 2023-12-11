@@ -100,6 +100,13 @@ class Tractor{
 		amountOfFuel = 0;
 		printData();
 	}
+	public Tractor(String brand, String model, int amountOfFuel) 
+	{
+		this.brand = brand;
+		this.model = model;
+		this.amountOfFuel = amountOfFuel;
+		printData();
+	}
 	public void printData()
 	{
 		System.out.println("Brand: " + brand);
