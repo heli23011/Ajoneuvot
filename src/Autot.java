@@ -108,7 +108,7 @@ class Tractor extends Vehicle{
 	}
 	// Oletus-konstruktori Tractor-luokalle
 	public Tractor() {
-		brand = "Ferguson";
+		brand = "";
 		model = "";
 		amountOfFuel = 0;
 		printData();
