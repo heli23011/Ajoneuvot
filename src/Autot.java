@@ -7,10 +7,10 @@ public class Autot {
 		Scanner in = new Scanner(System.in);
 		String answer = "";
 		Car car = new Car("Toyota", "RAV4", 40);
-		car.printData();
+		//car.printData(); Kommentoituna koska muuten kaikki printtautuu kahteen kertaan, abstract classissa jo printData
 		
 		Tractor tractor = new Tractor();
-		tractor.printData();
+		//tractor.printData(); Kommentoituna koska muuten kaikki printtautuu kahteen kertaan, abstract classissa jo printData
 		
 		System.out.println("a=accelerate b=break x=exit");
 		answer = in.nextLine();
