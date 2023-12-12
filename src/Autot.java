@@ -55,15 +55,15 @@ class Car extends Vehicle{
 	public void setModel(String model) {
 		this.model = model;
 	}
-
+	// Oletus-konstruktori Car-luokalle
 	public Car() {
 		brand = "";
 		model = "";
 		amountOfFuel = 0;
 		printData();
 	}
-	
-	public Car(String brand, String model, int amountOfFuel) {
+	// Parametrinen konstruktori Car-luokalle
+	public Car(String brand, String model, int amountOfFuel) { 
 		this.brand = brand;
 		this.model = model;
 		this.amountOfFuel = amountOfFuel;
@@ -97,7 +97,7 @@ class Car extends Vehicle{
 	}
 	
 }
-
+// Tractor-luokka
 class Tractor extends Vehicle{
 	private String brand;
 	private String model;
@@ -106,13 +106,14 @@ class Tractor extends Vehicle{
 	public String getModel() {
 		return model;
 	}
+	// Oletus-konstruktori Tractor-luokalle
 	public Tractor() {
 		brand = "Ferguson";
 		model = "";
 		amountOfFuel = 0;
 		printData();
 	}
-
+	// Parametrinen konstruktori Tractor-luokalle
 	public Tractor(String brand, String model, int amountOfFuel) 
 	{
 		this.brand = brand;
